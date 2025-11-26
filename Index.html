@@ -26,7 +26,7 @@
     }
     nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0;position:relative}
     .brand{display:flex;gap:12px;align-items:center}
-    .brand img{height:50px;width:50px;border-radius:8px}
+    .brand img{height:50px;width:50px;border-radius:8px;object-fit:cover}
     .brand .title{font-weight:700;font-size:1.2rem}
 
     .navlinks{display:flex;gap:10px;align-items:center}
@@ -66,8 +66,22 @@
     .contact-grid{display:flex;gap:20px;flex-wrap:wrap;align-items:flex-start}
     .contact-grid > div{flex:1;min-width:260px}
 
-    /* WhatsApp FAB */
-    .wa-fab{position:fixed;right:18px;bottom:18px;width:62px;height:62px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(180deg,var(--accent-2),#16a34a);color:#06240f;z-index:100;box-shadow:0 10px 30px rgba(34,197,94,.25)}
+    /* WhatsApp FAB – same as your template */
+    .wa-fab{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      width:60px;
+      height:60px;
+      display:grid;
+      place-items:center;
+      border-radius:50%;
+      background:#25D366;
+      color:white;
+      z-index:100;
+      box-shadow:0 10px 25px rgba(0,0,0,.35);
+    }
+    .wa-fab svg{width:32px;height:32px;fill:white;}
 
     footer{padding:30px 0;text-align:center;color:var(--muted)}
   </style>
@@ -78,7 +92,7 @@
 <header>
   <nav class="container">
     <div class="brand">
-      <img src="https://i.ibb.co/3c9kwfL/Whats-App-Image.jpg" alt="">
+      <img src="https://i.ibb.co/G4p5DN1x/Smart-Select-20251126-144539-Chat-GPT.jpg" alt="">
       <div class="title">ताज रेफ्रिजरेशन</div>
     </div>
 
@@ -106,15 +120,15 @@
   <div class="container hero-grid">
     <div class="card">
       <h1>ताज रेफ्रिजरेशन</h1>
-      <p class="muted">सभी प्रकार के AC इंस्टॉलेशन, रिपेयरिंग, गैस चार्जिंग एवं सर्विसिंग — आपके शहर शहादा में।</p>
+      <p class="muted">सभी प्रकार के AC इंस्टॉलेशन, रिपेयरिंग, गैस चार्जिंग एवं सर्विसिंग — शहादा में आपकी सर्विस पर।</p>
 
       <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn primary" href="https://wa.me/919765127866?text=Hi%20Taj%20Refrigeration%2C%20Service%20Needed">WhatsApp</a>
+        <a class="btn primary" href="https://wa.me/919765127866?text=Service%20Required">WhatsApp</a>
         <a class="btn" href="tel:9765127866">Call</a>
       </div>
 
       <div style="margin-top:14px" class="muted">
-        कादिर भाई — 10+ साल का अनुभव • फास्ट सर्विस • घर बैठे समाधान
+        कादिर भाई — फास्ट सर्विस • 10+ साल अनुभव • घर बैठे समाधान
       </div>
     </div>
 
@@ -147,35 +161,24 @@
     </div>
 
     <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-      <a class="btn primary" href="https://wa.me/919765127866?text=I%20Need%20Home%20Appliance%20Repair">Book Now</a>
+      <a class="btn primary" href="https://wa.me/919765127866?text=I%20Need%20Repair%20Service">Book Now</a>
       <a class="btn" href="tel:9765127866">Call</a>
     </div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="container card contact-grid">
-    <div>
-      <h2>संपर्क</h2>
-      <div class="muted" style="margin-top:6px">
-        बोहरा मस्जिद के पास,<br>
-        विकास हायस्कूल के पीछे,<br>
-        शहादा, जिला नंदुरबार — 425409 (महाराष्ट्र)
-      </div>
-
-      <div style="margin-top:14px;display:flex;gap:10px;">
-        <a class="btn primary" href="https://wa.me/919765127866">WhatsApp</a>
-        <a class="btn" href="tel:9765127866">Call</a>
-      </div>
+  <div class="container card">
+    <h2>संपर्क</h2>
+    <div class="muted" style="margin-top:6px">
+      बोहरा मस्जिद के पास,<br>
+      विकास हायस्कूल के पीछे,<br>
+      शहादा, जिला नंदुरबार — 425409 (महाराष्ट्र)
     </div>
 
-    <div>
-      <iframe
-        style="width:100%;height:220px;border-radius:12px;border:none"
-        loading="lazy"
-        allowfullscreen
-        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyD2JrV-lHhQ_123FAKEKEY&q=Shahada+Nandurbar"
-      ></iframe>
+    <div style="margin-top:14px;display:flex;gap:10px;">
+      <a class="btn primary" href="https://wa.me/919765127866">WhatsApp</a>
+      <a class="btn" href="tel:9765127866">Call</a>
     </div>
   </div>
 </section>
@@ -187,7 +190,7 @@
 </footer>
 
 <a class="wa-fab" href="https://wa.me/919765127866">
-  <svg viewBox="0 0 32 32" fill="currentColor">
+  <svg viewBox="0 0 32 32">
     <path d="M16 3.5A12.5 12.5 0 0 0 4.23 22.03L3 29l7.12-1.86A12.5 12.5 0 1 0 16 3.5Z"/>
   </svg>
 </a>
